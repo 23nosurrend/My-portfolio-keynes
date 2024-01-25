@@ -1,0 +1,96 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    background-color: #1F232E;
+    
+}
+#portfoli-btn{
+    background-color: #1F232E;
+    color:#02EBFF;
+    border:#02EBFF solid 1px;
+    width:150px;
+    height:40px;
+    border-radius:10px;
+    font-size: 17px;;
+}
+#portfoli-btn:hover{
+    background-color: #02EBFF;
+    border:#1F232E solid 1px;
+    color: black ;
+    font-weight: bolder;
+}
+#title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#title span{
+    color:#02EBFF;
+    font-weight: bolder;
+}
+#title h3{
+    color:white;
+    font-weight: bolder;
+}
+
+#outer-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   
+}
+#project-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    flex-wrap: wrap;
+   
+}
+.project-div-withimg{
+    padding:20px;
+
+}
+
+.img-project{
+    width:250px;
+    height:250px;
+    
+}
+.text{
+    display:flex;
+    gap:50%
+}
+.text h4{
+    font-size: 13px;
+    color:white;
+
+}
+.text a{
+    font-size:13px;
+    color:#02EBFF;
+    text-decoration: none;
+}
+.Vie-Site:hover{
+color:aquamarine;
+font-weight: bolder;
+}
+.div-github{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+.github-btn{
+    background-color:#02EBFF;
+    width:80px;
+    border-radius: 5px;
+    color:black;
+    font-weight: bolder;
+}
+.github-btn:hover{
+    background-color:aquamarine;
+    color:#1F232E;
+}
