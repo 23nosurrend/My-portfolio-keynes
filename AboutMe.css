@@ -1,0 +1,153 @@
+*{
+    margin:0px;
+    padding:0px;
+    background-color:#1F232E;
+    box-sizing: border-box;
+    color:white;
+    font-size:28px;
+}
+/* #portfolio-logo{
+    
+    
+} */
+#portfoli-btn{
+    background-color: #1F232E;
+    color:#02EBFF;
+    border:#02EBFF solid 1px;
+    width:150px;
+    height:40px;
+    border-radius:10px
+}
+#outerdiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+span{
+    color:#02EBFF
+}
+.title-Div{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-top:20px;
+}
+#right-diwwithProfile{
+    background-color:#02EBFF;
+    border-radius:50px;
+    display:flex;
+    align-items: center;
+    height:300px;
+    width:300px
+    
+}
+#profile-img{
+    border-radius:50%;
+    width:300px
+}
+
+@media(max-width:768px){
+    *{
+        
+        font-size:24px;
+    }
+
+    #right-diwwithProfile{
+        background-color:#02EBFF;
+        border-radius:50px;
+        display:flex;
+        align-items: center;
+        height:270px;
+        width:270px
+        
+    }
+    #profile-img{
+        border-radius:50%;
+        width:270px
+    }
+}
+
+@media(max-width:600px){
+    *{
+        
+        font-size:20px;
+    }
+    #right-diwwithProfile{
+        background-color:#02EBFF;
+        border-radius:50px;
+        display:flex;
+        align-items: center;
+        height:270px;
+        width:270px
+        
+    }
+    #profile-img{
+        border-radius:50%;
+        width:270px
+    }
+    #outerdiv{
+        
+        margin-top: 40px;
+    }
+    #portfoli-btn{
+        background-color: #1F232E;
+        color:#02EBFF;
+        border:#02EBFF solid 1px;
+        width:100px;
+        height:20px;
+        border-radius:10px;
+        font-size:12px;
+    }
+
+}
+@media(max-width:375px){
+    *{
+        
+        font-size:13px;
+    }
+    #right-diwwithProfile{
+        background-color:#02EBFF;
+        border-radius:50px;
+        display:flex;
+        align-items: center;
+        height:270px;
+        width:270px
+        
+    }
+    #profile-img{
+        border-radius:50%;
+        width:270px
+    }
+
+    #outerdiv{
+        
+        margin-top: 30px;
+    }
+
+}
+
+@media(max-width:320px){
+    *{
+        
+        font-size:10px;
+    }
+    #right-diwwithProfile{
+        background-color:#02EBFF;
+        border-radius:50px;
+        display:flex;
+        align-items: center;
+        height:200px;
+        width:200px
+        
+    }
+    #profile-img{
+        border-radius:50%;
+        width:200px
+    }
+    #outerdiv{
+        
+        margin-top: 30px;
+    }
+
+}
