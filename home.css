@@ -115,7 +115,9 @@
     font-size:24px
 }
 #nav-div a{
-    padding-top:10px
+    padding-top:10px;
+    color:white;
+    text-decoration: none;
 }
 #nav-div a:hover{
     color:#02EBFF;
