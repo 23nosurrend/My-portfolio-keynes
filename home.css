@@ -117,6 +117,10 @@
 #nav-div a{
     padding-top:10px
 }
+#nav-div a:hover{
+    color:#02EBFF;
+    text-decoration: underline;
+}
 #nav-div button{
     background-color:#1F232E;
     border:solid #02EBFF 1px;
@@ -180,6 +184,13 @@
     width:100px;
     height:30px
 }
+#btn1-home:hover{
+    background-color:#1F232E;
+    color:#02EBFF;
+    width:100px;
+    height:30px
+}
+
 #btn2-home{
     background-color:#1F232E;
     color:black;
@@ -187,7 +198,13 @@
     width:100px;
     height:30px
 }
-
+#btn2-home:hover{
+    background-color:#02EBFF;
+    color:black;
+    border:#02EBFF solid 1px;
+    width:100px;
+    height:30px
+}
 #cv-div{
     display:flex;
     align-items: center;
