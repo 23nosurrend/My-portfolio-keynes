@@ -10,6 +10,93 @@
     /* margin-top:30px; */
 }
 
+/* Resing of all icons ,bar,facebook and email */
+.icon-img{
+    font-size:50px;
+    color:#02EBFF
+
+   
+}
+#bar{
+    display:none
+}
+
+#login-form{
+    position:fixed;
+    width:350px;
+    height:200px;
+   background-color: white;
+    border:#02EBFF solid 1px;
+    z-index:10000;
+    top:20%;
+    right:8%;
+    display:none
+
+
+   
+   
+   
+}
+
+
+
+#div-with-form{
+    background-color:white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+#login{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px
+}
+#close{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;;
+}
+#cancel-icon{
+    color:#02EBFF;
+    background-color:white;
+    
+     
+}
+#form {
+    background-color:white;
+    
+}
+#form label{
+    background-color:white
+}
+#form input{
+    background-color:white;
+    border:#02EBFF solid 1px;
+    
+}
+.input{
+    width:200px;
+    height:30px;
+}
+#login-btn{
+    background-color:#02EBFF;
+    color:black;
+    font-weight: bolder;
+    width:100px;
+    height:30px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:10px;
+    padding-left:10px;
+    border-radius:10px
+}
+
+/*  */
+
+
 #nav-div1{
    
     display:flex;
@@ -41,11 +128,13 @@
 #div-with-btn{
      padding-top:5px 
 }
-#facebook{
-    width:500px
-}  
-
-
+#icon{
+    display:flex;
+    gap:30px;
+    margin:10px;
+    
+    
+}
 #greeting p{
     color:white;
     font-size:36px
@@ -203,8 +292,9 @@
     .container{
         max-width:376px
     }
+
     #log-div{
-        color:#02EBFF
+        color:#02EBFF;
         font-size:30px;
         /* margin-top:30px; */
     }
@@ -235,6 +325,12 @@
         gap:15px;
         font-size:18px
     }
+    #bar{
+        display:flex;
+        justify-content: center;
+        margin-left:150px
+    }
+    
     #nav-div1{
    
         display:flex;
@@ -252,7 +348,148 @@
         margin-top:100px
     }
 }
+@media(max-width:414px){
+    .container{
+        max-width:414px
+    }
 
+    #log-div{
+        color:#02EBFF;
+        font-size:30px;
+        /* margin-top:30px; */
+    }
+    #nav-div button{
+        background-color:#1F232E;
+        border:solid #02EBFF 1px;
+        width:50px;
+        height:25px;
+        color:white
+        
+    }
+    #greeting p{
+        color:white;
+        font-size:26px
+    
+    }
+    #btn-section{
+        display:flex;
+        gap:50px;
+        margin-top:20px
+    }
+    #greeting .p1{
+        font-size:14px
+    }
+    #nav-div{
+        color:white;
+        display:none;
+        gap:28px;
+        font-size:30px;
+        border:#02EBFF solid 1px
+    }
+    #nav-div a{
+        padding:2px
+    }
+    #bar{
+        display:flex;
+        justify-content: center;
+        margin-left:30px
+    }
+    
+    #nav-div1{
+   
+        display:flex;
+        gap:px;
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:40px
+    }
+    #body-div{
+        margin-left:25px;
+        margin-right:5px;
+        display:flex;
+        flex-direction: column;
+        gap:25px;
+        margin-top:100px
+    }
+}
+
+@media(max-width:321px){
+    .container{
+        max-width:414px
+    }
+    #right-diwwithProfile{
+        background-color:#02EBFF;
+        border-radius:50px;
+        display:flex;
+        align-items: center;
+        height:250px;
+        width:250px
+        
+    }
+    #profile-img{
+        border-radius:50%;
+        width:250px
+    }
+
+    #log-div{
+        color:#02EBFF;
+        font-size:30px;
+        /* margin-top:30px; */
+    }
+    #nav-div button{
+        background-color:#1F232E;
+        border:solid #02EBFF 1px;
+        width:50px;
+        height:25px;
+        color:white
+        
+    }
+    #greeting p{
+        color:white;
+        font-size:26px
+    
+    }
+    #btn-section{
+        display:flex;
+        gap:50px;
+        margin-top:20px
+    }
+    #greeting .p1{
+        font-size:14px
+    }
+    #nav-div{
+        color:white;
+        display:none;
+        gap:28px;
+        font-size:30px;
+        border:#02EBFF solid 1px
+    }
+    #nav-div a{
+        padding:2px
+    }
+    #bar{
+        display:flex;
+        justify-content: center;
+        margin-left:0.1px
+    }
+    
+    #nav-div1{
+   
+        display:flex;
+        gap:5px;
+        margin-left:1px;
+        margin-right:2px;
+        margin-top:40px
+    }
+    #body-div{
+        margin-left:20px;
+        margin-right:5px;
+        display:flex;
+        flex-direction: column;
+        gap:25px;
+        margin-top:100px
+    }
+}
 
 
 
