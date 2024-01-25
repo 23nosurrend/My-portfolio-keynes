@@ -188,6 +188,28 @@
     height:30px
 }
 
+#cv-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:40px;
+}
+#cv-btn{
+    background-color:#02EBFF;
+    width:120px;
+    height:30px;
+    color:black;
+    font-size: larger;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+   
+}
+
+
+
+
+
+
 @media(max-width:1024px){
     .container{
         max-width:1024px
