@@ -6,7 +6,7 @@
 
 #log-div{
     color:#02EBFF;
-    font-size:36px;
+    font-size:20px;
     /* margin-top:30px; */
 }
 
@@ -100,7 +100,7 @@
 #nav-div1{
    
     display:flex;
-    gap:400px;
+    gap:300px;
     margin-left:25px;
     margin-right:25px;
     margin-top:40px
@@ -111,13 +111,21 @@
 #nav-div{
     color:white;
     display:flex;
-    gap:30px;
-    font-size:24px
+    gap:25px;
+    font-size:17px
 }
 #nav-div a{
     padding-top:10px;
     color:white;
     text-decoration: none;
+}
+#loginClick{
+    color:#02EBFF !important
+}
+#loginClick:hover{
+    background-color: #02EBFF;
+    color:#1F232E !important;
+    font-weight: bolder;
 }
 #nav-div a:hover{
     color:#02EBFF;
@@ -143,11 +151,11 @@
 }
 #greeting p{
     color:white;
-    font-size:36px
+    font-size:25px
 
 }
 #greeting .p1{
-    font-size:32px
+    font-size:20px
 }
 #greeting span{
     color:#02EBFF;
@@ -182,7 +190,8 @@
 }
 #btn1-home{
     background-color:#02EBFF;
-    color:black;
+    color:#1F232E;
+    font-weight: bolder;
     width:100px;
     height:30px
 }
@@ -195,14 +204,15 @@
 
 #btn2-home{
     background-color:#1F232E;
-    color:black;
+    color:#02EBFF;
     border:#02EBFF solid 1px;
     width:100px;
     height:30px
 }
 #btn2-home:hover{
     background-color:#02EBFF;
-    color:black;
+    color:#1F232E;
+    font-weight: bolder;
     border:#02EBFF solid 1px;
     width:100px;
     height:30px
