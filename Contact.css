@@ -1,0 +1,110 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#1F232E;
+            padding: 20px;
+        }
+
+
+        .my-blog-div{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color:white;
+            margin:10px;
+        }
+        .my-blog-div span{
+            color:aqua;
+            font-weight: bolder;
+        }
+        #portfoli-btn{
+            background-color: #1F232E;
+            color:#02EBFF;
+            border:#02EBFF solid 1px;
+            width:150px;
+            height:40px;
+            border-radius:10px;
+            font-size: 17px;
+            margin:15px;
+        }
+        #portfoli-btn:hover{
+            background-color: #02EBFF;
+            border:#1F232E solid 1px;
+            color: black ;
+            font-weight: bolder;
+        }
+        #portfolio-logo:hover{
+            background-color: #02EBFF;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .form-group.full-width {
+            flex-basis: 100%;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #1F232E;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            
+        }
