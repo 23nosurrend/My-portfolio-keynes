@@ -1,0 +1,125 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    background-color:#1F232E;
+}
+/* .inner-div{
+    /* border:black solid 2px; */
+/* }
+.inner-div2{
+     border:red solid 2px 
+} */
+.div-with-text{
+    display:flex;
+    gap:24%;
+    margin-left:10px;
+    color:white;
+    font-weight: bolder;
+}
+.div-with-progress{
+    border:aqua solid 2px;
+    width:400px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin:10px;
+    
+}
+.div-with-color{
+    background-color:aqua;
+    width:60%;
+    height:30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.outer-div-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+}
+.div-with-log{
+    margin:30px;
+}
+#portfoli-btn{
+    background-color: #1F232E;
+    color:#02EBFF;
+    border:#02EBFF solid 1px;
+    width:150px;
+    height:40px;
+    border-radius:10px;
+    font-size: 17px;;
+}
+#portfoli-btn:hover{
+    background-color: #02EBFF;
+    border:#1F232E solid 1px;
+    color: black ;
+    font-weight: bolder;
+}
+#portfolio-logo:hover{
+    background-color: #02EBFF;
+}
+#title{
+    color:#02EBFF;
+    font-weight: bolder;
+}
+#div-with-title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+    margin-bottom: 30px;
+}
+#father-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+
+
+/* start of resposniveness */
+@media (max-width:769px){
+    .outer-div-flex{
+        display: flex;
+        gap:30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}
+@media (max-width:376px){
+    .div-with-progress{
+        border:aqua solid 2px;
+        width:330px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin:10px;
+        
+    }
+
+}
+@media (max-width:415px){
+    .div-with-progress{
+        border:aqua solid 2px;
+        width:330px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin:10px;
+        
+    }
+
+}
+@media (max-width:321px){
+    .div-with-progress{
+        border:aqua solid 2px;
+        width:280px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin:10px;
+        
+    }
+
+}
