@@ -4,7 +4,7 @@
     background-color:#1F232E;
     box-sizing: border-box;
     color:white;
-    font-size:28px;
+    
 }
 /* #portfolio-logo{
     
@@ -16,7 +16,15 @@
     border:#02EBFF solid 1px;
     width:150px;
     height:40px;
-    border-radius:10px
+    border-radius:10px;
+    font-size: 20px;
+    position: absolute;
+    top:3%;
+    left:3%;
+}
+#portfoli-btn:hover{
+    background-color: #02EBFF;
+    color:#1F232E
 }
 #outerdiv{
     display:flex;
@@ -32,6 +40,11 @@ span{
     align-items:center;
     justify-content: center;
     margin-top:20px;
+    font-size: 25px;
+}
+#info{
+    font-size: 17px;
+    margin-top:20px
 }
 #right-diwwithProfile{
     background-color:#02EBFF;
@@ -48,10 +61,7 @@ span{
 }
 
 @media(max-width:768px){
-    *{
-        
-        font-size:24px;
-    }
+   
 
     #right-diwwithProfile{
         background-color:#02EBFF;
@@ -69,10 +79,7 @@ span{
 }
 
 @media(max-width:600px){
-    *{
-        
-        font-size:20px;
-    }
+    
     #right-diwwithProfile{
         background-color:#02EBFF;
         border-radius:50px;
@@ -101,11 +108,40 @@ span{
     }
 
 }
-@media(max-width:375px){
-    *{
-        
-        font-size:13px;
+@media(max-width:376px){
+
+    #info{
+        font-size: 13px !important;
+        margin-top:20px
     }
+    
+    #right-diwwithProfile{
+        background-color:#02EBFF;
+        border-radius:50px;
+        display:flex;
+        align-items: center;
+        height:270px;
+        width:270px
+        
+    }
+    #profile-img{
+        border-radius:50%;
+        width:270px
+    }
+
+    #outerdiv{
+        
+        margin-top: 30px;
+    }
+
+}
+@media(max-width:321px){
+
+    #info{
+        font-size: 11px !important;
+        margin-top:20px
+    }
+    
     #right-diwwithProfile{
         background-color:#02EBFF;
         border-radius:50px;
@@ -127,10 +163,11 @@ span{
 
 }
 
-@media(max-width:320px){
-    *{
-        
-        font-size:10px;
+
+@media(max-width:415px){
+    #info{
+        font-size: 15px;
+        margin-top:20px
     }
     #right-diwwithProfile{
         background-color:#02EBFF;
