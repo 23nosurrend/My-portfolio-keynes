@@ -113,7 +113,7 @@
 #nav-div1{
    
     display:flex;
-    gap:480px!important;
+    gap:480px;
     margin-left:25px;
     margin-right:25px;
     margin-top:40px
@@ -122,7 +122,7 @@
 #nav-div{
     color:white;
     display:flex;
-    gap:15px !important;
+    gap:15px ;
     
 }
 #nav-div a{
@@ -135,11 +135,11 @@
 
 
 #loginClick{
-    color:#02EBFF !important
+    color:#02EBFF
 }
 #loginClick:hover{
     background-color: #02EBFF;
-    color:#1F232E !important;
+    color:#1F232E ;
     font-weight: bolder;
 }
 #nav-div a:hover{
@@ -168,7 +168,7 @@
 
 }
 #greeting .p1{
-    font-size:20px !important
+    font-size:20px
 }
 #greeting span{
     color:#02EBFF;
@@ -180,7 +180,7 @@
     margin-left:25px;
     margin-right:5px;
     display:flex;
-    gap:330px !important;
+    gap:445px ;
     margin-top:100px
 }
 #right-diwwithProfile{
@@ -205,22 +205,25 @@
     background-color:#02EBFF;
     color:#1F232E;
     font-weight: bolder;
-    width:100px;
-    height:30px
+    width:110px;
+    height:30px;
+    border-radius: 7px;;
 }
 #btn1-home:hover{
     background-color:#1F232E;
     color:#02EBFF;
-    width:100px;
-    height:30px
+    width:110px;
+    height:30px;
+    
 }
 
 #btn2-home{
     background-color:#1F232E;
     color:#02EBFF;
     border:#02EBFF solid 1px;
-    width:100px;
-    height:30px
+    width:110px;
+    height:30px;
+    border-radius: 7px;
 }
 #btn2-home:hover{
     background-color:#02EBFF;
@@ -279,6 +282,7 @@
         margin-top:100px
     }
 }
+
 @media(max-width:769px){
     .container{
         max-width:768px
@@ -292,7 +296,7 @@
     #nav-div1{
    
         display:flex;
-        gap:100px !important;
+        gap:100px ;
         margin-left:25px;
         margin-right:25px;
         margin-top:40px
@@ -301,10 +305,11 @@
         margin-left:25px;
         margin-right:5px;
         display:flex;
-        gap: 27px !important;
+        gap: 27px ;
         margin-top:100px
     }
 }
+
 @media(max-width:600px){
     .container{
         max-width:600px
@@ -312,11 +317,10 @@
     #log-div{
         color:#02EBFF;
         font-size:18px;
-        /* margin-top:30px; */
+      
     }
     #loginClick{
         padding-bottom:5px;
-    }
     }
     #nav-div button{
         background-color:#1F232E;
@@ -378,7 +382,15 @@
         width:260px
     }
 
+}
 
+
+
+
+
+
+    
+    
 
 @media(max-width:376px){
     .container{
@@ -388,7 +400,7 @@
     #log-div{
         color:#02EBFF;
         font-size:17px !important;
-        /* margin-top:30px; */
+     
     }
     #nav-div button{
         background-color:#1F232E;
@@ -454,8 +466,9 @@
         gap:25px;
         margin-top:100px
     }
-}
-@media(max-width:414px){
+} 
+
+ @media(max-width:414px){
     .container{
         max-width:414px
     }
@@ -466,7 +479,7 @@
     #log-div{
         color:#02EBFF;
         font-size:17px !important;
-        /* margin-top:30px; */
+       
     }
     #nav-div button{
         background-color:#1F232E;
@@ -533,7 +546,7 @@
         gap:25px;
         margin-top:100px
     }
-}
+} 
 
 
    
@@ -560,7 +573,7 @@
     #log-div{
         color:#02EBFF;
         font-size:30px;
-        /* margin-top:30px; */
+       
     }
     #nav-div button{
         background-color:#1F232E;
@@ -615,7 +628,7 @@
         gap:25px;
         margin-top:100px
     }
-}
+} 
 
 
 
