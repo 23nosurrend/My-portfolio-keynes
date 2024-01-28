@@ -1,0 +1,122 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1F232E;
+}
+#father-div{
+   display:flex;
+   height:100vh;
+  
+   
+   
+}
+
+#Left-div{
+    display:flex;
+    flex-direction: column;
+    gap:100px;
+    background-color: grey;
+    height:100vh;
+    width:15%
+}
+
+#upper-div{
+    background-color: white;
+    border:#02EBFF solid 1px;
+    display:flex;
+    gap:20px;
+    align-items: center;
+    width:100%;
+    height:10%
+}
+
+#log{
+    border:#02EBFF solid 2px;
+    padding:5px;
+    border-radius: 50%;
+}
+#div-name{
+    font-size: 20px;
+  
+}
+
+#tags{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    margin-left:5%
+    
+   
+    
+}
+#tags a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+   width:150px
+}
+
+#tags a:hover{
+    color:#02EBFF;
+    font-weight: bolder;
+    
+}
+#logout-btn{
+    color:#02EBFF;
+    font-weight:bolder ;
+    background-color: white;
+    width:100px;
+    height:30px;
+    border-radius: 50%;
+}
+#logout-btn:hover{
+    background-color: red;
+    color:white
+   
+}
+
+#inner-div1{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.form-group{
+    color:#02EBFF;
+    margin-top:20px;
+}
+#text{
+    width:400px;
+    height:200px
+}
+#title{
+    width:400px
+}
+#Right-div {
+    display: flex;
+    justify-content: center; /* Center child elements horizontally */
+    align-items: center; /* Center child elements vertically */
+     width: 85%;
+}
+.uplaod-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:1%
+}
+ 
+.upload-btn{
+    color:#02EBFF;
+    font-weight:bolder ;
+    background-color: white;
+    width:100px;
+    height:30px;
+    border-radius: 10px;
+}
+.upload-btn:hover{
+    background-color: blue;
+    color:white
+   
+}
