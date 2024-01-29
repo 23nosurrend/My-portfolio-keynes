@@ -1,0 +1,143 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1F232E;
+}
+#father-div{
+   display:flex;
+   
+   
+}
+
+#Left-div{
+    display:flex;
+    flex-direction: column;
+    gap:100px;
+    background-color: grey;
+    height:100vh;
+    width:15%
+}
+
+#upper-div{
+    background-color: white;
+    border:#02EBFF solid 1px;
+    display:flex;
+    gap:20px;
+    align-items: center;
+    width:100%;
+    height:10%
+}
+
+#log{
+    border:#02EBFF solid 2px;
+    padding:5px;
+    border-radius: 50%;
+}
+#div-name{
+    font-size: 20px;
+  
+}
+
+#tags{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    margin-left:5%
+    
+   
+    
+}
+#tags a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+   width:150px
+}
+
+#tags a:hover{
+    color:#02EBFF;
+    font-weight: bolder;
+    
+}
+
+
+#Articles{
+    border:#02EBFF solid 1px;
+    border-radius: 10px;
+}
+#logout-btn{
+    color:#02EBFF;
+    font-weight:bolder ;
+    background-color: white;
+    width:100px;
+    height:30px;
+    border-radius: 50%;
+}
+#logout-btn:hover{
+    background-color: red;
+    color:white
+   
+}
+
+#div-with-Header{
+    display:flex;
+    justify-content: space-around;
+   
+    
+    color:white
+}
+#div-with-content{
+    display:flex;
+    justify-content: space-around;
+  
+    
+    
+}
+#Right-div{
+   width:100%;
+   margin-top:190px;
+}
+#div-with-actionsIcons{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap:10px;
+    color:#02EBFF;
+    font-size: 30px;
+}
+.delete-icon:hover{
+ color:red
+}
+.view-icon:hover{
+    color:blue
+}
+.edit-icon:hover{
+    color:green
+}
+
+.head-title{
+    
+    width:250px
+}
+
+.content{
+   
+    width:250px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+.content-name{
+    width:250px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+
+
