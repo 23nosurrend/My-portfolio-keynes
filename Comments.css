@@ -1,0 +1,125 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:#1F232E;
+}
+#father-div{
+   display:flex;
+   height:100vh;
+  
+   
+   
+}
+
+#Left-div{
+    display:flex;
+    flex-direction: column;
+    gap:100px;
+    background-color: grey;
+    height:100vh;
+    width:15%
+}
+
+#upper-div{
+    background-color: white;
+    border:#02EBFF solid 1px;
+    display:flex;
+    gap:20px;
+    align-items: center;
+    width:100%;
+    height:10%
+}
+
+#log{
+    border:#02EBFF solid 2px;
+    padding:5px;
+    border-radius: 50%;
+}
+#div-name{
+    font-size: 20px;
+  
+}
+
+#tags{
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    margin-left:5%
+    
+   
+    
+}
+#tags a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+   width:150px
+}
+
+#tags a:hover{
+    color:#02EBFF;
+    font-weight: bolder;
+    
+}
+#logout-btn{
+    color:#02EBFF;
+    font-weight:bolder ;
+    background-color: white;
+    width:100px;
+    height:30px;
+    border-radius: 50%;
+}
+#logout-btn:hover{
+    background-color: red;
+    color:white
+   
+}
+#Right-div{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-top:50px;
+}
+
+.div-with-title{
+    margin-top:20px;
+   
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#02EBFF;
+    text-decoration: underline;
+    font-size: 17px;;
+}
+
+.Comment-div{
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-top:2%;
+    color:white;
+   
+    padding:20px;
+    height:50px
+}
+.div-with-name-date{
+    border-right: #02EBFF solid 3px ;
+    width:50%
+}
+.div-with-name-date p{
+    margin-top:2%;
+    color:#02EBFF
+   
+}
+.div-with-comment{
+    display:flex;
+    align-items: center;
+    height:100%;
+    width:50%
+   
+}
