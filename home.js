@@ -24,8 +24,10 @@ function navigate(){
     let name=document.getElementById("username")
     let pass=document.getElementById("password")
 
-    if(name.value==="keynesbizimana@gmail.com"&&pass.value===123){
-        alert("welcome")
+    if(name.value==="keynesbizimana@gmail.com"&&pass.value==="123"){
+        window.location.href="ViewBlogs.html"  
+    }else{
+        alert("Invalid credintials")
     }
 }
 
