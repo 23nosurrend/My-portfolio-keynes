@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./Upload.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./uploadBlogs.js"></script>
 
     <title>Blogs/Dashboard</title>
 </head>
@@ -37,12 +38,12 @@
             <div>
                 <div id="inner-div1">
                     <div class="form-group">
-                     <label for="name">Date:</label>
-                     <input type="datetime" id="name" name="name" required>
+                     <label for="name">Date:</label><br>
+                     <input type="datetime" id="date" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Image:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Image:</label><br>
+                        <input type="file" id="image" name="email" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -55,7 +56,7 @@
                     <textarea id="text" name="text" rows="6" required></textarea>
                 </div>
                 <div class="uplaod-div">
-                    <button class="upload-btn">Upload</button>
+                    <button class="upload-btn" onclick="submitBlog()">Upload</button>
                 </div>
             </div>
         
