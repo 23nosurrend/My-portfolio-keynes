@@ -23,7 +23,7 @@ function submitBlog(){
 
             let strDate=JSON.stringify(date)
             let strTitle=JSON.stringify(title)
-            let str=JSON.stringify(written)
+            let str=written
             localStorage.setItem("date",strDate)
             localStorage.setItem("title",strTitle)
             localStorage.setItem("blogs",str)
