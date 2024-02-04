@@ -4,30 +4,39 @@
 
 
 function submitBlog(){
-    let written =document.getElementById("text").value
-    let title=document.getElementById("title").value
-    let date=document.getElementById("date").value
-    let image=document.getElementById("image").files
-    alert (image.length)
+   
+    let writtenValue =document.getElementById("text").value
+    let titleValue=document.getElementById("title").value
+    let dateValue=document.getElementById("date").value
+    let imageValue=document.getElementById("image").files
+    alert (imageValue.length)
     console.log(image)
 
-    if(image.length>0){
+    if(imageValue.length>0){
         const Reader=new FileReader()
         //reader only the first image
-        Reader.readAsDataURL(image[0])
+        Reader.readAsDataURL(imageValue[0])
         //create onload function
         Reader.onload=function(event){
             const imageData=event.target.result
 
-             localStorage.clear()
+            let existingBlogs=localStorage.getItem("Blogs")
+            if(!existingBlogs){
+                existingBlogs=[]
+            }else{
+                existingBlogs=JSON.parse(existingBlogs)
+            }
+            let newBlog={
+                date:dateValue,
+                title:titleValue,
+                picture:imageData,
+                content:writtenValue
+            }
+            existingBlogs.push(newBlog)
 
-            let strDate=JSON.stringify(date)
-            let strTitle=JSON.stringify(title)
-            let str=written
-            localStorage.setItem("date",strDate)
-            localStorage.setItem("title",strTitle)
-            localStorage.setItem("blogs",str)
-            localStorage.setItem("picture",imageData)
+            localStorage.setItem("Blogs",JSON.stringify(existingBlogs))
+
+            alert("blogs submited succesfully")
 
         }
 
