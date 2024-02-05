@@ -82,6 +82,27 @@ body{
    
 }
 
+#Delete-all{
+    color:#02EBFF;
+    font-weight:bolder ;
+    background-color: white;
+    width:100px;
+    height:30px;
+    border-radius: 5%;
+
+}
+#Delete-all:hover{
+    background-color: red;
+    color:white
+}
+#delete-all-div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right:5px;
+}
+
 #div-with-Header{
     display:flex;
     justify-content: space-around;
@@ -99,6 +120,7 @@ body{
 #Right-div{
    width:100%;
    margin-top:190px;
+  
 }
 #div-with-actionsIcons{
     display:flex;
