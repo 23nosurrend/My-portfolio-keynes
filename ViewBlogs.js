@@ -56,11 +56,29 @@ document.addEventListener("DOMContentLoaded",function() {
 
 
 
-
+ 
+  
 
     
   }
-   
+  let iconFound=document.getElementById("delete-icon")
+  iconFound.addEventListener("click",function(){
+      const currentTitle=this.parentNode.previousSibling.querySelector(".content-name h3")
+      alert(currentTitle.innerHTML)
+     
+      let index;
+      for(let i=0;i<Data.length;i++){
+            if(Data[i].title===currentTitle){
+                  index=i;
+                  break;
+            }
+      }
+      
+      Data.shift(Data[index])
+      localStorage.setItem("Blogs",Data)
+
+  })
+  
 
   const deleteIcon=document.getElementById("Delete-all")
   deleteIcon.addEventListener("click",()=>{
@@ -73,7 +91,10 @@ document.addEventListener("DOMContentLoaded",function() {
       alert("Do you want to delete this blog")
 
   })
+
+ 
   
+
   
 
 
