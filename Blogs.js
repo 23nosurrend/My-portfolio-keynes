@@ -54,7 +54,13 @@ document.addEventListener("DOMContentLoaded",function(){
     divContent.appendChild(divParagraph)
     outer.appendChild(divContent)
 
-
+   let divbtn=document.createElement("div")
+       divbtn.id="div-btn"
+    let viewMorebtn=document.createElement("button")
+        viewMorebtn.id="viewmore"
+        viewMorebtn.innerHTML="View More"
+    divbtn.appendChild(viewMorebtn)
+    outer.appendChild(divbtn)
 
 
 

@@ -101,6 +101,24 @@ body{
     margin-right:10px
 }
 
+#div-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#viewmore{
+    font-size:12px;
+    border-radius: 20%;
+    background:#1F232E;
+    padding:5px;
+    color:#02EBFF;
+    border: solid black 1px;
+}
+#viewmore:hover{
+    font-size:12px;
+    background-color:#02EBFF;
+    color:#1F232E
+}
 
 .div-with-like{
     background-color:white
