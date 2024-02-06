@@ -43,6 +43,20 @@ body{
     display:flex;
      justify-content: center;
 }
+.imgDiv{
+    display:flex;
+    justify-content:center;
+}
+.titleDiv{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.contentDiv{
+    display:flex;
+    justify-content: center;
+}
 
 .currentImage{
     width:700px;

@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded",function(){
        outer.appendChild(divTitle)
 
     // About blog content
-    let Blogcontent=Data[i].content
+    let Blogcontent=Data[i].content[0]
     const divContent=document.createElement("div")
         divContent.className="div-with-intro"
     const divParagraph=document.createElement("p")
