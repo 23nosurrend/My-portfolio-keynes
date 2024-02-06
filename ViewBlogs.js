@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded",function() {
+      function updateLocalStorage(data) {
+            localStorage.setItem("Blogs", JSON.stringify(data));
+        }
+
     //retrieve image
     const found=localStorage.getItem("Blogs")
     
@@ -39,7 +43,8 @@ document.addEventListener("DOMContentLoaded",function() {
         divIcon.id="div-with-actionsIcons"
     const iconOne=document.createElement("i")
           iconOne.className="fa fa-trash-o delete-icon"
-          iconOne.id="delete-icon"
+          iconOne.id=`delete-icon${i}`
+          
     const iconTwo=document.createElement("i")
           iconTwo.className="fa fa-eye view-icon"
     const iconThree=document.createElement("i")
@@ -52,34 +57,52 @@ document.addEventListener("DOMContentLoaded",function() {
     outer.appendChild(divTitle)
     outer.appendChild(divIcon)
     right.appendChild(outer)
-
-
-
-
- 
-  
-
-    
-  }
-  let iconFound=document.getElementById("delete-icon")
-  iconFound.addEventListener("click",function(){
-      const currentTitle=this.parentNode.previousSibling.querySelector(".content-name h3")
-      alert(currentTitle.innerHTML)
      
-      let index;
-      for(let i=0;i<Data.length;i++){
-            if(Data[i].title===currentTitle){
-                  index=i;
-                  break;
-            }
-      }
+  }
+   document.getElementById("Right-div").addEventListener("click",function(event){
       
-      Data.shift(Data[index])
-      localStorage.setItem("Blogs",Data)
+            if(event.target.classList.contains("delete-icon")){
+                  const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
+                  if(confirm("Do you really want to delete this blog titled:"+currentTitle+"?")){
+                        let index;
+                  for(let i=0;i<Data.length;i++){
+                        if(Data[i].title === currentTitle){
+                              index=i;
+                              break
+                        }
+                  }
+                  delete Data[index]
+                  Data=Data.filter(Boolean)
+                  updateLocalStorage(Data)
+                  location.reload()
+                  }
+                  
+            }
+      
 
-  })
+   })
+ 
+//   iconFound.addEventListener("click",function(){
+//       const currentTitle=this.parentNode.previousSibling.querySelector(".content-name h3")
+//       alert(currentTitle.innerHTML)
+     
+//       let index;
+//       for(let i=0;i<Data.length;i++){
+//             if(Data[i].title===currentTitle){
+//                   index=i;
+//                   break;
+//             }
+//       }
+      
+//       delete Data[index]
+//       Data=Data.filter(Boolean)
+      
+//       updateLocalStorage(Data)
+
+//   })
   
 
+  
   const deleteIcon=document.getElementById("Delete-all")
   deleteIcon.addEventListener("click",()=>{
      const confirmation=confirm("Do you really want to delete all")
