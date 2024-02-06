@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",function(){
     alert("Here you can view all blogs")
 
    
-    const father=document.getElementsByClassName("father-div")[0]
+    const father=document.getElementById("father-div")
 
     const outer=document.createElement("div")
     outer.className="outer-div";
@@ -55,40 +55,29 @@ document.addEventListener("DOMContentLoaded",function(){
     outer.appendChild(divContent)
 
    let divbtn=document.createElement("div")
-       divbtn.id="div-btn"
+       divbtn.className="div-btn"
+// about creating a tag to derict of view a single
+    const viewMoreLink=document.createElement("a")
+    viewMoreLink.className="vieTag"
+    viewMoreLink.href = `singleBlog.html?id=${i}`;
+   
+
     let viewMorebtn=document.createElement("button")
-        viewMorebtn.id="viewmore"
+        viewMorebtn.className="viewmore"
         viewMorebtn.innerHTML="View More"
-    divbtn.appendChild(viewMorebtn)
+    viewMoreLink.appendChild(viewMorebtn)
+    divbtn.appendChild(viewMoreLink)
     outer.appendChild(divbtn)
+    
 
 
 
 
   }
    
+  // about redirecting to a single blog view
+  
 
-    // const title=localStorage.getItem("title")
-    // const head=document.getElementsByClassName("div-with-header")[0]
-    // //now create p to display inside div-with header
-    // const headerParagraph=document.createElement("h3")
-    // headerParagraph.innerHTML=JSON.parse(title)
-
-    // // now append title to its div
-    // head.appendChild(headerParagraph)
-
-    // let found=localStorage.getItem("blogs")
-    // let setences=found.split('.')
-    // let container=document.getElementsByClassName("div-with-intro")[0]
-    // container.innerHTML=""
-
-    // for(let i=0;i<setences.length;i++){
-    //     let setence=document.createElement("p")
-    //     setence.innerHTML=setences[i]
-        
-    //     container.appendChild(setence)
-        
-       
-    // }
+    
    
 })

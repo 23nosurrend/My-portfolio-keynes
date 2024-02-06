@@ -45,7 +45,7 @@ body{
     
     
 }
-.father-div{
+#father-div{
     display:flex;
     gap:20px;
     flex-wrap: wrap;
@@ -101,12 +101,12 @@ body{
     margin-right:10px
 }
 
-#div-btn{
+.div-btn{
     display:flex;
     align-items: center;
     justify-content: center;
 }
-#viewmore{
+.viewmore{
     font-size:12px;
     border-radius: 20%;
     background:#1F232E;
@@ -114,10 +114,13 @@ body{
     color:#02EBFF;
     border: solid black 1px;
 }
-#viewmore:hover{
+.viewmore:hover{
     font-size:12px;
     background-color:#02EBFF;
     color:#1F232E
+}
+.vieTag{
+    text-decoration: none;
 }
 
 .div-with-like{

@@ -1,0 +1,59 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: #1F232E;
+}
+.my-blog-div{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    margin:10px;
+}
+
+.my-blog-div span{
+    color:aqua;
+    font-weight: bolder;
+}
+#portfoli-btn{
+    background-color: #1F232E;
+    color:#02EBFF;
+    border:#02EBFF solid 1px;
+    width:150px;
+    height:40px;
+    border-radius:10px;
+    font-size: 17px;
+    margin:15px;
+}
+#portfoli-btn:hover{
+    background-color: #02EBFF;
+    border:#1F232E solid 1px;
+    color: black ;
+    font-weight: bolder;
+}
+#portfolio-logo:hover{
+    background-color: #02EBFF;
+}
+
+#center{
+    display:flex;
+     justify-content: center;
+}
+
+.currentImage{
+    width:700px;
+    height:300px;
+}
+.datePar-date{
+    color:#02EBFF;
+}
+.titlePar{
+    color:white;
+}
+.contentPar{
+    color:white;
+}
