@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(Data.length)
     const parent=document.getElementById("father-single")
 
-    //craete image div
+    //create image div
     const imgdiv=document.createElement("div")
-    imgdiv.id="imgDiv"
+    imgdiv.className="imgDiv"
     const imgTag=document.createElement("img")
           imgTag.className="currentImage"
           imgTag.src=Data[index].picture

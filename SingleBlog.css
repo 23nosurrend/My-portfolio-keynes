@@ -41,17 +41,29 @@ body{
 
 #center{
     display:flex;
-     justify-content: center;
+    justify-content: center;
+    
+}
+#father-single{
+    width:500px
 }
 .imgDiv{
     display:flex;
     justify-content:center;
+}
+.dateDiv{
+    display:flex;
+    justify-content: end;
 }
 .titleDiv{
     display:flex;
     justify-content: center;
     margin-top:10px;
     margin-bottom:10px;
+    
+}
+.titleDiv p{
+    color:rgb(115, 115, 208)
 }
 .contentDiv{
     display:flex;
