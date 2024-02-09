@@ -71,6 +71,7 @@ body{
     width:100px;
     height:30px;
     border-radius: 50%;
+    margin-left:5%
 }
 #logout-btn:hover{
     background-color: red;
@@ -93,6 +94,9 @@ body{
 }
 #title{
     width:400px
+}
+#date{
+    width:400px;
 }
 #Right-div {
     display: flex;
@@ -120,3 +124,196 @@ body{
     color:white
    
 }
+
+/* Media quesrries of upload */
+
+@media screen and (max-width:769px){
+    #upper-div{
+        background-color: white;
+        border:#02EBFF solid 1px;
+        display:flex;
+        gap:15px;
+        align-items: center;
+        width:100%;
+        height:10%;
+        font-size:16px
+    }
+    #div-name{
+        font-size: 16px;
+      
+    }
+    #tags a{
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+       width:150px
+    }
+    
+}
+
+@media screen and (max-width:601px){
+    #upper-div{
+        background-color: white;
+        border:#02EBFF solid 1px;
+        display:flex;
+        gap:9px;
+        align-items: center;
+        width:100%;
+        height:10%;
+        font-size:13px
+    }
+    #div-name{
+        font-size: 13px;
+        font-weight: bolder;
+      
+    }
+    #tags a{
+        text-decoration: none;
+        color:white;
+        font-size: 16px;
+       width:150px
+    }
+    #logout-btn{
+        color:#02EBFF;
+        font-weight:bolder ;
+        background-color: white;
+        width:85px;
+        height:30px;
+        border-radius: 50%;
+    }
+
+}
+@media screen and (max-width:376px){
+    #Left-div{
+        display:flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: grey;
+        height:100vh;
+        width:20%
+    }
+    #Right-div {
+        display: flex;
+        justify-content: center; /* Center child elements horizontally */
+        align-items: center; /* Center child elements vertically */
+         width: 80%;
+    }
+    #upper-div{
+        background-color: white;
+        border:#02EBFF solid 1px;
+        display:flex;
+        gap:7px;
+        align-items: center;
+        width:100%;
+        height:10%;
+        font-size:13px
+    }
+    #log{
+        border:#02EBFF solid 2px;
+        padding:3px;
+        border-radius: 50%;
+    }
+    #div-name{
+        font-size: 13px;
+        font-weight: bolder;
+      
+    }
+    #tags a{
+        text-decoration: none;
+        color:white;
+        font-size: 13px;
+       width:150px
+    }
+    #logout-btn{
+        color:#02EBFF;
+        font-weight:bolder ;
+        background-color: white;
+        width:70px;
+        height:30px;
+        font-size: 13px;
+        font-weight: bolder;
+        border-radius: 50%;
+    }
+
+    /* About forms ,making them small */
+    #text{
+        width:238px;
+        height:200px
+    }
+    #title{
+        width:238px
+    }
+    #date{
+        width:238px;
+    }
+
+}
+
+@media screen and (max-width:415px){
+    #Left-div{
+        display:flex;
+        flex-direction: column;
+        gap:100px;
+        background-color: grey;
+        height:100vh;
+        width:20%
+    }
+    #Right-div {
+        display: flex;
+        justify-content: center; /* Center child elements horizontally */
+        align-items: center; /* Center child elements vertically */
+         width: 80%;
+    }
+    #upper-div{
+        background-color: white;
+        border:#02EBFF solid 1px;
+        display:flex;
+        gap:7px;
+        align-items: center;
+        width:100%;
+        height:10%;
+        font-size:13px
+    }
+    #log{
+        border:#02EBFF solid 2px;
+        padding:3px;
+        border-radius: 50%;
+    }
+    #div-name{
+        font-size: 13px;
+        font-weight: bolder;
+       
+      
+    }
+    #tags a{
+        text-decoration: none;
+        color:white;
+        font-size: 13px;
+       width:150px
+    }
+    #logout-btn{
+        color:#02EBFF;
+        font-weight:bolder ;
+        background-color: white;
+        width:70px;
+        height:30px;
+        font-size: 13px;
+        font-weight: bolder;
+        border-radius: 50%;
+    }
+
+    /* About forms ,making them small */
+    #text{
+        width:238px;
+        height:200px
+    }
+    #title{
+        width:238px
+    }
+    #date{
+        width:238px;
+    }
+
+}
+
+
