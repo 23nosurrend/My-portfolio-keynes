@@ -54,7 +54,62 @@ document.addEventListener("DOMContentLoaded", function() {
            contentPar.innerHTML=Data[index].content
            contentDiv.appendChild(contentPar)
            parent.appendChild(contentDiv)
+    // add  comment sections
+    const commentFather=document.createElement("div")// this is comment father box
+          commentFather.className="commentFather"
+    const addComment=document.createElement("div")
+           addComment.className="commentTitle"
+    const commentPar=document.createElement("par")
+          commentPar.className="commentPar"
+          commentPar.innerHTML="Add Your Comment Here:"
+          addComment.appendChild(commentPar)
+          commentFather.appendChild(addComment)
+          parent.appendChild(commentFather)
 
+    
+          // First Name input
+          const divName=document.createElement("div")
+                divName.className="divName"
+          
+          const firstNameInput = document.createElement("input");
+          firstNameInput.className="firstname"
+          firstNameInput.setAttribute("type", "text");
+          firstNameInput.setAttribute("placeholder", "First Name");
+          
+          // Last Name input
+          const lastNameInput = document.createElement("input");
+          lastNameInput.className="lastname"
+          lastNameInput.setAttribute("type", "text");
+          lastNameInput.setAttribute("placeholder", "Last Name");
+
+          divName.appendChild(firstNameInput,lastNameInput)
+          divName.appendChild(lastNameInput)
+          commentFather.appendChild(divName)
+          parent.appendChild(commentFather)
+       //comment text
+       const divTextArea=document.createElement("div")
+             divTextArea.className="textAreaDiv"
+       const commentInput = document.createElement("textarea");
+       commentInput.className="textarea"
+       commentInput.setAttribute("placeholder", "Your Comment");
+       
+       divTextArea.appendChild(commentInput)
+       commentFather.appendChild(divTextArea)
+       parent.appendChild(commentFather)
+
+       //create submit button
+       const submitDiv=document.createElement("div")
+             submitDiv.className="submit-btn-Div"
+       
+       const submitButton = document.createElement("button");
+       submitButton.className="submit-btn"
+       submitButton.setAttribute("type", "submit");
+       submitButton.textContent = "Submit";
+       
+       submitDiv.appendChild(submitButton)
+       commentFather.appendChild(submitDiv)
+       parent.appendChild(commentFather)
+              
 
 
 // function about like
