@@ -19,6 +19,7 @@ function submitBlog(){
         //create onload function
         Reader.onload=function(event){
             const imageData=event.target.result
+            
 
             let existingBlogs=localStorage.getItem("Blogs")
             if(!existingBlogs){
