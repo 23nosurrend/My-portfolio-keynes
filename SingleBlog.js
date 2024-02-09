@@ -24,9 +24,16 @@ document.addEventListener("DOMContentLoaded", function() {
         datePar.innerHTML=Data[index].date
     const divLike=document.createElement("div")
          divLike.className="like-Div"
-     const iconLike=document.createElement("span")
-           iconLike.className="grommet-icons--like"
+     const iconLike=document.createElement("i")
+           iconLike.className="fa fa-heart like-icon"
+     const divCount=document.createElement("div")
+           divCount.className="divcount"
+     const numberLike=document.createElement("p")
+           numberLike.className="numberCount"
+       numberLike.innerHTML=0
+      divCount.appendChild(numberLike)
        divLike.appendChild(iconLike)
+       divLike.appendChild(divCount)
 
         dateDiv.appendChild(divLike)
         dateDiv.appendChild(datePar)
@@ -47,6 +54,23 @@ document.addEventListener("DOMContentLoaded", function() {
            contentPar.innerHTML=Data[index].content
            contentDiv.appendChild(contentPar)
            parent.appendChild(contentDiv)
+
+
+
+// function about like
+
+    let likeIcons=document.getElementsByClassName("like-icon")
+    for(let i=0;i<likeIcons.length;i++){
+       likeIcons[i].addEventListener("click",function(){
+         let likeCountDiv=this.closest(".like-Div")
+       let number=likeCountDiv.querySelector(".numberCount")
+       let realNumber=parseInt(number.innerHTML);
+       realNumber++
+       number.innerHTML=realNumber
+      
+          
+       })
+    }
            
 
 

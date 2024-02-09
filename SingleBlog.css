@@ -4,6 +4,10 @@
     box-sizing: border-box;
    
 }
+.like-icon{
+    color:white;
+    font-size:30;
+}
 body{
     background-color: #1F232E;
 }
@@ -53,7 +57,7 @@ body{
 }
 .dateDiv{
     display:flex;
-    justify-content: end;
+    justify-content: space-between;
 }
 .titleDiv{
     display:flex;
@@ -84,4 +88,16 @@ body{
     color:white;
    
     
+}
+.like-Div{
+    display:flex;
+    gap:10px
+}
+.like-icon:hover{
+    color:red;
+    font-size:30;
+}
+.numberCount{
+    color:blue;
+    font-weight: bolder;
 }
