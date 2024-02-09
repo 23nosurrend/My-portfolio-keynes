@@ -16,12 +16,19 @@ document.addEventListener("DOMContentLoaded", function() {
     imgdiv.appendChild(imgTag)
     parent.appendChild(imgdiv)
 
-    //create date div
+    //create date div//like
     const dateDiv=document.createElement("div")
         dateDiv.className="dateDiv"
     const datePar=document.createElement("p")
         datePar.className="datePar-date"
         datePar.innerHTML=Data[index].date
+    const divLike=document.createElement("div")
+         divLike.className="like-Div"
+     const iconLike=document.createElement("span")
+           iconLike.className="grommet-icons--like"
+       divLike.appendChild(iconLike)
+
+        dateDiv.appendChild(divLike)
         dateDiv.appendChild(datePar)
         parent.appendChild(dateDiv)
     // This is about title
