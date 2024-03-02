@@ -1,51 +1,37 @@
+function submitBlog() {
+    let writtenValue = document.getElementById("text").value;
+    let titleValue = document.getElementById("title").value;
+    let dateValue = document.getElementById("date").value;
+    let imageValue = document.getElementById("image").files;
 
-
-// fucntion to submit written blogs
-
-
-function submitBlog(){
-   
-    let writtenValue =document.getElementById("text").value
-    let titleValue=document.getElementById("title").value
-    let dateValue=document.getElementById("date").value
-    let imageValue=document.getElementById("image").files
-    alert (imageValue.length)
-    console.log(image)
-
-    if(imageValue.length>0){
-        const Reader=new FileReader()
-        //reader only the first image
-        Reader.readAsDataURL(imageValue[0])
-        //create onload function
-        Reader.onload=function(event){
-            const imageData=event.target.result
-            
-
-            let existingBlogs=localStorage.getItem("Blogs")
-            if(!existingBlogs){
-                existingBlogs=[]
-            }else{
-                existingBlogs=JSON.parse(existingBlogs)
-            }
-            let newBlog={
-                date:dateValue,
-                title:titleValue,
-                picture:imageData,
-                content:writtenValue
-            }
-            existingBlogs.push(newBlog)
-
-            localStorage.setItem("Blogs",JSON.stringify(existingBlogs))
-
-            alert("blogs submited succesfully")
-
-        }
-
-    }else{
-        alert ("Select image")
+    if (titleValue.trim() === "" || writtenValue.trim() === "") {
+        alert("Title and content are required.");
+        return;
     }
-    
-    
-   
 
+    if (imageValue.length === 0) {
+        alert("Please select an image for the blog post.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("image", imageValue[0]);
+    formData.append("date", dateValue);
+    formData.append("title", titleValue);
+    formData.append("content", writtenValue);
+
+    fetch('https://portfolio-backend-15.onrender.com/admin/login', {
+        method: 'POST',
+        body: formData
+    }).then(response => {
+        if (response.ok) {
+            alert("Blog post submitted successfully.");
+            // Optionally, clear form fields or update UI here
+        } else {
+            alert("Error submitting blog post. Please try again.");
+        }
+    }).catch(error => {
+        console.error("Error submitting blog post:", error);
+        alert("An unexpected error occurred. Please try again later.");
+    });
 }

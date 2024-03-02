@@ -21,14 +21,35 @@ function cancelFucntion(){
 // Validation of credintials
 
 function navigate(){
-    let name=document.getElementById("username")
-    let pass=document.getElementById("password")
+    let name=document.getElementById("username").value;
+    let pass=document.getElementById("password").value;
+ 
+    console.log("Username:", name);
+    console.log("Password:", pass);
 
-    if(name.value==="keynesbizimana@gmail.com"&&pass.value==="123"){
-        window.location.href="ViewBlogs.html"  
-    }else{
-        alert("Invalid credintials")
-    }
+    // Prepare data to be sent to backend 
+    const data = {
+        "Email":name,
+        "Password": pass
+    };
+
+    console.log("Data to be sent:", data);
+
+    // Make a post request to backend live link
+    fetch('https://portfolio-backend-15.onrender.com/admin/login',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }).then(response => {
+        if(response.ok){
+            window.location = 'ViewBlogs.html';
+        } else {
+            alert("Invalid credentials");
+        }
+    }).catch(err => {
+        console.log("An error occurred:", err);
+        alert("An error occurred, please try again");
+    });
 }
-
-        
