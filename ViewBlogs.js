@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded",function() {
-      function updateLocalStorage(data) {
-            localStorage.setItem("Blogs", JSON.stringify(data));
-        }
+      fetch('http://localhost:3000/get/blogs')
+        .then(response=>response.json())
+        .then(data=>{
 
-    //retrieve image
-    const found=localStorage.getItem("Blogs")
-    
-    let Data=JSON.parse(found)
+
+
+  let Data=data.data.blogs
   for(let i=0;i<Data.length;i++) {
+      const blog=Data[i]
     // get Right div
     const right=document.getElementById("Right-div")
 
@@ -25,14 +25,14 @@ document.addEventListener("DOMContentLoaded",function() {
     const divDate=document.createElement("div")
          divDate.className="content"
     const innerH=document.createElement("h3")
-          innerH.innerHTML=Data[i].date
+          innerH.innerHTML=blog.date
     divDate.appendChild(innerH)
 
     //This is about title
     const divTitle=document.createElement("div")
          divTitle.className="content-name"
     const H3Title=document.createElement("h3")
-       H3Title.innerHTML=Data[i].title
+       H3Title.innerHTML=blog.title
     divTitle.appendChild(H3Title)
    
     // about icon of delete,,edit,view
@@ -59,6 +59,18 @@ document.addEventListener("DOMContentLoaded",function() {
     right.appendChild(outer)
      
   }
+
+
+        })
+
+     
+      
+    
+    
+    
+
+
+  /// code of actions on blog
    document.getElementById("Right-div").addEventListener("click",function(event){
       
             if(event.target.classList.contains("delete-icon")){

@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
-    const index = urlParams.get("id");
+    
+    const title = urlParams.get("title");
+  
+    
+    
    
-    const found=localStorage.getItem("Blogs")
-    const Data=JSON.parse(found)
-    console.log(Data.length)
     const parent=document.getElementById("father-single")
 
     //create image div

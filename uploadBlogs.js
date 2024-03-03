@@ -20,7 +20,7 @@ function submitBlog() {
     formData.append("title", titleValue);
     formData.append("content", writtenValue);
 
-    fetch('https://portfolio-backend-15.onrender.com/admin/login', {
+    fetch('http://localhost:3000/blog/post', {
         method: 'POST',
         body: formData
     }).then(response => {
@@ -28,7 +28,13 @@ function submitBlog() {
             alert("Blog post submitted successfully.");
             // Optionally, clear form fields or update UI here
         } else {
-            alert("Error submitting blog post. Please try again.");
+          response.json().then(data=>{
+            alert(data.data.message)
+          }).catch(err=>{
+            console.log(err)
+            alert("Unexpected erro occured while parsing response")
+          })
+            
         }
     }).catch(error => {
         console.error("Error submitting blog post:", error);

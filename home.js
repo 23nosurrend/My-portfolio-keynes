@@ -46,7 +46,13 @@ function navigate(){
         if(response.ok){
             window.location = 'ViewBlogs.html';
         } else {
-            alert("Invalid credentials");
+            response.json().then(data=>{
+                 alert(data.data.message)
+            }).catch(err=>{
+                alert('Error occured while parsing response')
+                console.log(err)
+            })
+            
         }
     }).catch(err => {
         console.log("An error occurred:", err);
