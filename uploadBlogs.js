@@ -20,7 +20,7 @@ function submitBlog() {
     formData.append("title", titleValue);
     formData.append("content", writtenValue);
 
-    fetch('http://localhost:3000/blog/post', {
+    fetch('https://portfolio-backend-17.onrender.com/blog/post', {
         method: 'POST',
         body: formData
     }).then(response => {

@@ -96,7 +96,7 @@ function createUser(){
     console.log(data)
 
 
-    fetch('http://localhost:3000/admin/signUp',{
+    fetch('https://portfolio-backend-17.onrender.com/admin/signUp',{
         method:'POST',
         headers:{
             'content-type':"application/json"

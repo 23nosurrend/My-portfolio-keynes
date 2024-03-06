@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded",function(){
     //retrieve image
-    fetch('http://localhost:3000/get/blogs')
+    fetch('https://portfolio-backend-17.onrender.com/get/blogs')
      .then(response=>response.json())
      .then(data=>{
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function(){
              imageTag.className="img1"
              imageTag.alt="Image of the story"
              console.log(blog.image)
-             imageTag.src=`http://localhost:3000/uploads/${blog.image}`
+             imageTag.src=`https://portfolio-backend-17.onrender.com/uploads/${blog.image}`
              console.log(imageTag.src)
              divImage.appendChild(imageTag)
              outer.appendChild(divImage)

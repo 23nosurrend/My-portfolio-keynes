@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function() {
-      fetch('http://localhost:3000/get/blogs')
+      fetch('https://portfolio-backend-17.onrender.com/get/blogs')
         .then(response=>response.json())
         .then(data=>{
 
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded",function() {
                  };
              //Make delete request
 
-            fetch('http://localhost:3000/delete/blog',{
+            fetch('https://portfolio-backend-17.onrender.com/delete/blog',{
                   method:"DELETE",
                   headers:{
                         "content-type":"application/json",
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded",function() {
 
      if(confirmation){
       const token=localStorage.getItem('token')
-        fetch('http://localhost:3000/delete/blogs',{
+        fetch('https://portfolio-backend-17.onrender.com/delete/blogs',{
             method:"DELETE",
             headers:{
                   'Authorization':token
