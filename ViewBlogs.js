@@ -44,14 +44,20 @@ document.addEventListener("DOMContentLoaded",function() {
     const iconOne=document.createElement("i")
           iconOne.className="fa fa-trash-o delete-icon"
           iconOne.id=`delete-icon${i}`
-          
+    
+    
     const iconTwo=document.createElement("i")
           iconTwo.className="fa fa-eye view-icon"
+    
+
     const iconThree=document.createElement("i")
           iconThree.className="fa fa-edit edit-icon"
+          iconThree.id=`update${i}`
+   const updateTag=document.createElement('a')     
+      //     updateTag.appendChild(iconThree)
     divIcon.appendChild(iconOne)
     divIcon.appendChild(iconTwo) 
-    divIcon.appendChild(iconThree)
+    divIcon.appendChild( iconThree)
     outer.appendChild(divCount)
     outer.appendChild(divDate)
     outer.appendChild(divTitle)
@@ -64,7 +70,7 @@ document.addEventListener("DOMContentLoaded",function() {
      
       if(event.target.classList.contains("delete-icon")){
             const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
-            if(confirm("Do you really want to delete this blog titled:"+currentTitle+"?")){
+            if(confirm("Do you want to delete this blog titled:"+currentTitle+"?")){
                   //get token from localStorage
                   const token=localStorage.getItem('token')
                  //prepare data to sent in body
@@ -94,6 +100,19 @@ document.addEventListener("DOMContentLoaded",function() {
             
             }
             
+      }
+// ia bout addingaction to update incon
+
+      else if(event.target.classList.contains("edit-icon")){
+            const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
+            console.log(event.target.closest(".div-with-content"))
+            console.log(currentTitle)
+
+       if(confirm("Add some changes to:"+currentTitle)){
+           window.href=`updateBlog.html?title=${encodeURIComponent(currentTitle)})`
+
+       }
+
       }
 
 
