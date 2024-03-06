@@ -47,7 +47,7 @@ function navigate(){
     console.log("Data to be sent:", data);
 
     // Make a post request to backend live link
-    fetch('http://localhost:3000/admin/login',{
+    fetch('https://portfolio-backend-17.onrender.com/admin/login',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
