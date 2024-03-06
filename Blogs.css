@@ -68,6 +68,7 @@ body{
 .div-with-text p{
     background-color:white;
 }
+
 .div-with-text{
     display:flex;
     gap:320px;
@@ -89,6 +90,10 @@ body{
 .div-with-intro p{
     background-color:white;
     font-size: 12px;;
+}
+.div-with-intro p:hover{
+    text-decoration: underline;
+    font-weight: bolder;
 }
 .div-with-intro {
     display:flex;

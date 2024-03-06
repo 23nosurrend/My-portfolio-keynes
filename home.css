@@ -47,6 +47,17 @@
     right:8%;
     display:none  
 }
+#signUp-form{
+    position:fixed;
+    width:350px;
+    height:200px;
+   background-color: white;
+    border:#02EBFF solid 1px;
+    z-index:10000;
+    top:20%;
+    right:8%;
+    display:none  
+}
 #div-with-form{
     background-color:white;
     display:flex;
@@ -83,6 +94,37 @@
     background-color:white;
     border:#02EBFF solid 1px;
     
+}
+#SignUp-form{
+    background-color:white; 
+}
+#SignUp-form label{
+    background-color:white
+}
+#SignUp-form input{
+    background-color:white;
+    border:#02EBFF solid 1px;
+}
+#signUp{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+#signUp-btn{
+    background-color:#02EBFF;
+    color:black;
+    font-weight: bolder;
+    width:100px;
+    height:30px;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-right:10px;
+    padding-left:10px;
+    border-radius:10px;
+    margin-bottom: 12px;
 }
 .input{
     width:200px;
@@ -135,13 +177,26 @@
 
 
 #loginClick{
-    color:#02EBFF
+    color:#02EBFF;
+    border-radius: 10px;
+}
+#signUpClick{
+    color:#02EBFF;
+    border-radius: 10px;
+}
+#signUpClick:hover{
+    background-color: #02EBFF;
+    color:#1F232E ;
+    font-weight: bolder;
 }
 #loginClick:hover{
     background-color: #02EBFF;
     color:#1F232E ;
     font-weight: bolder;
 }
+
+
+
 #nav-div a:hover{
     color:#02EBFF;
     text-decoration: underline;
@@ -258,8 +313,84 @@
 
 }
 
+/* animation */
 
+/* Animation for sliding in from the left */
+/* Animation for sliding in from the left */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-20%);
+      opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+  
+  /* Animation for sliding in from the right */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0; /* Start with opacity 0 */
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1; /* End with opacity 1 */
+    }
+  }
+  
+  /* Apply animation to the left and right divs */
+  #left-div, #right-diwwithProfile {
+    animation: slideInFromLeft 3s ease forwards, slideInFromRight 3s ease forwards;
+  }
+  
+  /* bouning image */
 
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Adjust the distance here */
+    }
+  }
+  
+  #right-diwwithProfile {
+    animation: bounce 3s infinite;
+  }
+ 
+
+  /* moving word  */
+  /* Keyframes for typewriter effect */
+  .p1 span {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+  }
+  
+  .p1 span::after {
+    content: "Programming";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: white; /* Adjust to match background color */
+    animation: typeWriter 5s infinite;
+  }
+  
+  @keyframes typeWriter {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
 
 
 @media(max-width:1024px){

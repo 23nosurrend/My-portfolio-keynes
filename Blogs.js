@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",function(){
         for(let i=0;i<Data.length;i++){
             const blog=Data[i]
            
-            alert("Here you can view all blogs")
+            
         
            
             const father=document.getElementById("father-div")
@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded",function(){
             const imageTag=document.createElement("img")
              imageTag.className="img1"
              imageTag.alt="Image of the story"
+             console.log(blog.image)
              imageTag.src=`http://localhost:3000/uploads/${blog.image}`
              console.log(imageTag.src)
              divImage.appendChild(imageTag)

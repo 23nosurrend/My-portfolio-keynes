@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Upload.css">
+    <link rel="stylesheet" href="./updateBlog.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./uploadBlogs.js"></script>
+    <script src="./updateBlog.js"></script>
 
     <title>Blogs/Dashboard</title>
 </head>
@@ -26,7 +26,7 @@
             <a href="./ViewBlogs.html" id="Articles">Articles</a>
             <a href="./Comments.html">Comments</a>
             <a href="">Subscribers</a>
-            <a href=""id="Upload" >Upload-New</a>
+            <a href=""id="Upload" >Update</a>
         </div>
         <div class="logout-div">
             <a href="./home.html"><button id="logout-btn">Logout</button></a>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="form-group">
                     <label for="text">Write /Paste Your Blog:</label><br>
-                    <textarea id="text" name="text" rows="6" required></textarea>
+                    <textarea id="text" name="text" rows="6" required placeholder="Change Content or let default one"></textarea>
                 </div>
                 <div class="uplaod-div">
                     <button class="upload-btn" onclick="submitBlog()">Upload</button>

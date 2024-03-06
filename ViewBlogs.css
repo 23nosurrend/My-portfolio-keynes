@@ -129,6 +129,7 @@ body{
     gap:10px;
     color:#02EBFF;
     font-size: 30px;
+    
 }
 .delete-icon:hover{
  color:red
@@ -162,4 +163,63 @@ body{
 }
 
 
+@media  screen and (max-width:1025px){
+    #upper-div{
+        background-color: white;
+        border:#02EBFF solid 1px;
+        display:flex;
+        gap:20px;
+        align-items: center;
+        width:100%;
+        height:10%
+       
+    }
+    #log{
+        border:#02EBFF solid 2px;
+        padding:5px;
+        border-radius: 50%;
+    }
+    #div-name{
+        font-size: 16px;
+      
+    }
 
+    #tags a{
+        text-decoration: none;
+        color:white;
+        font-size: 16px;
+        width:90px
+    }
+    #div-with-Header{
+       display:flex;
+       gap:10px;
+       
+        color:white
+    }
+    #div-with-content{
+        display:flex;
+        gap:2px;
+        font-size:10px
+      
+        
+        
+    }
+    #div-with-actionsIcons{
+        display:flex;
+        align-items: center;
+        gap:2px;
+        color:#02EBFF;
+        font-size: 20px;
+        flex-wrap: wrap;
+       
+    }
+    #delete-all-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-right:5px;
+    }
+    
+
+}

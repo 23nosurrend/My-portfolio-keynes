@@ -6,7 +6,7 @@
     <link rel="stylesheet"  href="./home.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="./home.js"></script>
-    <title>Portfoli/Home-Page</title>
+    <title>Portfolio/Home-Page</title>
 </head>
 <body>
         <div class="container">
@@ -31,6 +31,28 @@
             </div>
 
             <!-- end of login form -->
+            <div id="signUp-form">
+                <div id="close">
+                    <iconify-icon icon="material-symbols:cancel" id="cancel-icon" onclick="SignUpcancelFucntion()"></iconify-icon>
+                </div>
+                <div id="div-with-form">
+                    <form id="SignUp-form">
+                        <label for="">Email</label><br>
+                        <input type="text" class="input" id="SignUp-Email"><br>
+                        <label for="">Username</label><br>
+                        <input type="text" class="input" id="SignUp-username"><br>
+                        <label for="">Password</label><br>
+                        <input type="password"class="input" id="SignUp-password"><br>
+                        
+                    </form>
+                </div>
+                <div id="signUp">
+                   <button id="signUp-btn" onclick="createUser()">SignUp</button>
+                </div>
+                
+                
+            </div>
+
             
             <div id="nav-div1">
                 <div id="log-div"><h3>Portfolio</h3></div>
@@ -42,6 +64,7 @@
                     <a href="./Skills.html">Skills</a>
                     <a href="./Contact.html">Contact</a>
                     <div id="div-with-btn">
+                        <button onclick="signupDisplay()" id="signUpClick">Sign-Up</button>
                         <button onclick="loginDisplay()" id="loginClick">Login</button>
                     </div>
                     
@@ -66,7 +89,7 @@
                       <p>Hello ,There!</p>  <br>
                        <p>Bizimana Keynes</p> <br>
                         <p class="p1">I am a computer science student,who is</p> <br>
-                        <p class="p1"> passionate in <span>Programming</span> </p>
+                        <p class="p1"> passionate in <span id='dynamicText'>Programming</span> </p>
                         
                     
                     <div id="icon">

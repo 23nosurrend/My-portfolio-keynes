@@ -60,6 +60,50 @@ document.addEventListener("DOMContentLoaded",function() {
      
   }
 
+  document.getElementById("Right-div").addEventListener("click",function(event){
+     
+      if(event.target.classList.contains("delete-icon")){
+            const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
+            if(confirm("Do you really want to delete this blog titled:"+currentTitle+"?")){
+                  //get token from localStorage
+                  const token=localStorage.getItem('token')
+                 //prepare data to sent in body
+                 const data={
+                  title:currentTitle
+                 };
+             //Make delete request
+
+            fetch('http://localhost:3000/delete/blog',{
+                  method:"DELETE",
+                  headers:{
+                        "content-type":"application/json",
+                        "Authorization":token
+                  },
+                  body:JSON.stringify(data)
+            }).then(response=>{
+                  if(!response.ok){
+                        alert(data.data.message)
+                  }else{
+                        alert(data.data.message)
+                  }
+            }).catch(err=>{
+                  console.log(err)
+            })
+
+
+            
+            }
+            
+      }
+
+
+})
+
+
+
+
+
+
 
         })
 
@@ -70,48 +114,7 @@ document.addEventListener("DOMContentLoaded",function() {
     
 
 
-  /// code of actions on blog
-   document.getElementById("Right-div").addEventListener("click",function(event){
-      
-            if(event.target.classList.contains("delete-icon")){
-                  const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
-                  if(confirm("Do you really want to delete this blog titled:"+currentTitle+"?")){
-                        let index;
-                  for(let i=0;i<Data.length;i++){
-                        if(Data[i].title === currentTitle){
-                              index=i;
-                              break
-                        }
-                  }
-                  delete Data[index]
-                  Data=Data.filter(Boolean)
-                  updateLocalStorage(Data)
-                  location.reload()
-                  }
-                  
-            }
-      
-
-   })
  
-//   iconFound.addEventListener("click",function(){
-//       const currentTitle=this.parentNode.previousSibling.querySelector(".content-name h3")
-//       alert(currentTitle.innerHTML)
-     
-//       let index;
-//       for(let i=0;i<Data.length;i++){
-//             if(Data[i].title===currentTitle){
-//                   index=i;
-//                   break;
-//             }
-//       }
-      
-//       delete Data[index]
-//       Data=Data.filter(Boolean)
-      
-//       updateLocalStorage(Data)
-
-//   })
   
 
   
@@ -120,10 +123,30 @@ document.addEventListener("DOMContentLoaded",function() {
      const confirmation=confirm("Do you really want to delete all")
 
      if(confirmation){
-        localStorage.removeItem("Blogs")
+      const token=localStorage.getItem('token')
+        fetch('http://localhost:3000/delete/blogs',{
+            method:"DELETE",
+            headers:{
+                  'Authorization':token
+            }
+
+        })
+      .then(response=>response())
+      .then(data=>{
+            if(data.status==='success'){
+                  
+                  alert(data.data.message)
+                  window.location.reload()
+            }else{
+                  alert(data.data.message)
+            }
+      })
+       .catch(err=>{
+            console.log(err)
+        })
 
      }
-      alert("Do you want to delete this blog")
+      
 
   })
 
