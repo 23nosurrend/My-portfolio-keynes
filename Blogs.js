@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",function(){
              imageTag.className="img1"
              imageTag.alt="Image of the story"
              console.log(blog.image)
-             imageTag.src=`https://portfolio-backend-17.onrender.com/uploads/${blog.image}`
+             imageTag.src=`https://portfolio-backend-18.onrender.com/uploads/${blog.image}`
              console.log(imageTag.src)
              divImage.appendChild(imageTag)
              outer.appendChild(divImage)
