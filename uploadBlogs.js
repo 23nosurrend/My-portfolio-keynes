@@ -20,7 +20,7 @@ function submitBlog() {
     formData.append("title", titleValue);
     formData.append("content", writtenValue);
 
-    fetch('https://portfolio-backend-17.onrender.com/blog/post', {
+    fetch('https://portfolio-backend-18.onrender.com/blog/post', {
         method: 'POST',
         body: formData
     }).then(response => {
@@ -37,7 +37,7 @@ function submitBlog() {
             
         }
     }).catch(error => {
-        console.error("Error submitting blog post:", error);
+        console.log("Error submitting blog post:", error);
         alert("An unexpected error occurred. Please try again later.");
     });
 }

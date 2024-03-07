@@ -168,7 +168,7 @@
     
 }
 #nav-div a{
-    font-size:17px;
+    font-size:16px;
     padding-top:5px;
     color:white;
     text-decoration: none;
@@ -204,10 +204,10 @@
 #nav-div button{
     background-color:#1F232E;
     border:solid #02EBFF 1px;
-    width:100px;
+    width:85px;
     height:25px;
-    color:white
-    
+    color:white;
+    font-size: 12px;
 }
 
 #icon{

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const title = urlParams.get("title");
     console.log(title)
-    fetch(`http://localhost:3000/get/blog/${encodeURIComponent(title)}`,{
+    fetch(`https://portfolio-backend-18.onrender.com/get/blog/${encodeURIComponent(title)}`,{
       method:'GET',
       headers:{
          "content-type":'application/json'

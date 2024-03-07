@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded",function() {
-      fetch('https://portfolio-backend-17.onrender.com/get/blogs')
+      fetch('https://portfolio-backend-18.onrender.com/get/blogs')
         .then(response=>response.json())
         .then(data=>{
 
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded",function() {
                  };
              //Make delete request
 
-            fetch('https://portfolio-backend-17.onrender.com/delete/blog',{
+            fetch('https://portfolio-backend-18.onrender.com/delete/blog',{
                   method:"DELETE",
                   headers:{
                         "content-type":"application/json",
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded",function() {
                   body:JSON.stringify(data)
             }).then(response=>{
                   if(!response.ok){
-                        alert(data.data.message)
+                        alert(data.data.error)
                   }else{
                         alert(data.data.message)
                   }
@@ -101,32 +101,31 @@ document.addEventListener("DOMContentLoaded",function() {
             }
             
       }
-// ia bout addingaction to update incon
-
-      else if(event.target.classList.contains("edit-icon")){
-            const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
-            console.log(event.target.closest(".div-with-content"))
-            console.log(currentTitle)
-
-       if(confirm("Add some changes to:"+currentTitle)){
-           window.href=`updateBlog.html?title=${encodeURIComponent(currentTitle)})`
-
-       }
-
-      }
-
-
-})
-
-
-
-
 
 
 
         })
 
-     
+
+
+
+
+
+})
+
+  
+
+// else if(event.target.classList.contains("edit-icon")){
+//       const currentTitle=event.target.parentNode.previousSibling.querySelector(".content-name h3").innerHTML
+//       console.log(event.target.closest(".div-with-content"))
+//       console.log(currentTitle)
+
+//  if(confirm("Add some changes to:"+currentTitle)){
+//      window.href=`updateBlog.html?title=${encodeURIComponent(currentTitle)})`
+
+//  }
+
+// }
       
     
     
@@ -143,7 +142,7 @@ document.addEventListener("DOMContentLoaded",function() {
 
      if(confirmation){
       const token=localStorage.getItem('token')
-        fetch('https://portfolio-backend-17.onrender.com/delete/blogs',{
+        fetch('https://portfolio-backend-18.onrender.com/delete/blogs',{
             method:"DELETE",
             headers:{
                   'Authorization':token
@@ -170,7 +169,6 @@ document.addEventListener("DOMContentLoaded",function() {
   })
 
  
-  
 
   
 
@@ -180,6 +178,5 @@ document.addEventListener("DOMContentLoaded",function() {
 
 })
 
+// Add event listener for the popstate event
 
-
-  

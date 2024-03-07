@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     const title = urlParams.get("title");
     console.log(title)
-    fetch(`https://portfolio-backend-17.onrender.com/get/blog/${encodeURIComponent(title)}`,{
+    fetch(`https://portfolio-backend-18.onrender.com/get/blog/${encodeURIComponent(title)}`,{
       method:'GET',
       headers:{
          "content-type":'application/json'
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const imgTag=document.createElement("img")
             imgTag.className="currentImage"
             console.log(Data.image)
-            imgTag.src=`https://portfolio-backend-17.onrender.com/uploads/${Data.image}`
+            imgTag.src=`https://portfolio-backend-18.onrender.com/uploads/${Data.image}`
       imgdiv.appendChild(imgTag)
       parent.appendChild(imgdiv)
   

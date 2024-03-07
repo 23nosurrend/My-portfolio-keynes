@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded",function(){
     //retrieve image
-    fetch('https://portfolio-backend-17.onrender.com/get/blogs')
+    fetch('https://portfolio-backend-18.onrender.com/get/blogs')
      .then(response=>response.json())
      .then(data=>{
 
